@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Splint copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Splint.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CA633ED417B9E4D10083B1CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CA9B9424179D8E04004931C1</key>
 		<dict>
 			<key>primary</key>

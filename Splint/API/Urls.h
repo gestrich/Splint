@@ -1,9 +1,5 @@
 #ifdef DEBUG
-
-    #define BASE_URL @"http://localhost:5000/"
-
+#define BASE_URL @"http://desolate-island-3918.herokuapp.com/"
 #else
-    //TODO: Change to final server URL
-    #define BASE_URL @"http://localhost:5000/"
-
+#define BASE_URL @"http://localhost:3000/"
 #endif

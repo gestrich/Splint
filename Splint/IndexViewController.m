@@ -1,4 +1,4 @@
-    //
+//
 //  IndexViewController.m
 //  Splint
 //
@@ -13,6 +13,8 @@
 #import "VideoViewController.h"
 #import "APIWrapper.h"
 
+#define INDEX_CELL_ID @"index_cell"
+
 @interface IndexViewController ()
 
 @end
@@ -23,24 +25,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    /*
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://localhost:5000/"]];
     
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse * response, NSData * data, NSError *error){
-        
-        NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"stringData = %@", stringData);
-    }];
-     */
-    APIWrapper *api = [APIWrapper get];
-    [api sendRequest:@"GET" url:[NSURL URLWithString:@"http://www.google.com"] withParams:nil target:self callback:@selector(test:)];
-                                
+    //Fetch the json list
+    [APIWrapper videoIndexForTarget:self callback:@selector(videoIndexRows:)];
+
 }
 
--(void)test:(id)responseData{
-    NSLog(@"callback made");
-    NSLog(@"Data = %@", responseData);
+-(void)videoIndexRows:(id)responseData{
+    
+    NSError *error;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&error];
+    
+    NSLog(@"Dictionary = %@", dict);
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +47,33 @@
 }
 
 - (IBAction)showVideo:(UIButton *)sender {
-    VideoViewController *videoVc = [[VideoViewController alloc] initWithContentURL:[NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8"]];
+
+    NSString *url = [BASE_URL stringByAppendingString: @"stream/prog_index.m3u8"];
+
+    VideoViewController *videoVc = [[VideoViewController alloc] initWithContentURL:[NSURL URLWithString:url]];
     [self presentMoviePlayerViewControllerAnimated:videoVc];
 }
+
+
+
+#pragma mark - UITableViewDataSource Delegate
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell;
+    cell = [self.tableView dequeueReusableCellWithIdentifier:INDEX_CELL_ID];
+    
+    return cell;
+    
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 30.;
+}
+
+
 @end

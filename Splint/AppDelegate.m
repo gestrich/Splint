@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
 
+#define SPLASH_VIEW_TAG 1001
+#define HAND_IMAGE_TAG 2001
+#define SPLASH_VIEW_TIME 3
+
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -14,30 +18,38 @@
 {
     // Override point for customization after application launch.
     UIView *splashView = [[[NSBundle mainBundle] loadNibNamed:@"SplashView" owner:self options:nil] lastObject];
-    splashView.tag = 1001;
+    splashView.tag = SPLASH_VIEW_TAG;
     
+    //Add splash view to main view controller
     UIViewController *initialVc = self.window.rootViewController;
-    UIView *greenView = [[UIView alloc] initWithFrame:(CGRect){0,0,100,100}];
-
-    [initialVc.view addSubview:greenView];
+    splashView.frame = (CGRect){0,0, initialVc.view.frame.size.width, initialVc.view.frame.size.height};
     [initialVc.view addSubview:splashView];
-
-    NSDate *fireTime = [NSDate dateWithTimeIntervalSinceNow:3 ];
-    NSTimer *timer = [[NSTimer alloc] initWithFireDate:fireTime interval:0.0 target:self selector:@selector(removeSplashView) userInfo:nil repeats:NO];
     
+    //Fade hand image in
+    UIView *handImage = [splashView viewWithTag:HAND_IMAGE_TAG];
+    handImage.alpha = 0.0;
+    [UIView animateWithDuration:1.0 animations:^{
+        handImage.alpha = 3.0;
+    }];
 
+    //set time to display splash view -- remove view after expiration
+    NSDate *fireTime = [NSDate dateWithTimeIntervalSinceNow:SPLASH_VIEW_TIME ];
+    NSTimer *timer = [[NSTimer alloc] initWithFireDate:fireTime interval:0.0 target:self selector:@selector(removeSplashView) userInfo:nil repeats:NO];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
     return YES;
 }
 
 -(void)removeSplashView{
     UIViewController *initialVc = self.window.rootViewController;
-    UIView *splashView = [initialVc.view viewWithTag:1001];
+    UIView *splashView = [initialVc.view viewWithTag:SPLASH_VIEW_TAG];
     [UIView transitionFromView:splashView
      toView:splashView.superview
      duration:2.0
      options:UIViewAnimationOptionTransitionFlipFromRight|UIViewAnimationOptionShowHideTransitionViews
-     completion:^(BOOL finished){}];
+     completion:^(BOOL finished){
+         [splashView removeFromSuperview];
+     }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

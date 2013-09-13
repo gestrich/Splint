@@ -6,7 +6,10 @@
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
 
+
+
 #import <Foundation/Foundation.h>
+#import "Urls.h"
 
 @interface APIWrapper : NSObject<NSURLConnectionDelegate>
 
@@ -14,8 +17,13 @@
 
 +(APIWrapper*)get;
 
+//Calls
++(void)videoIndexForTarget:(id)target callback:(SEL)action;
+
 -(void)sendRequest:(NSString*)actionType url:(NSURL*)url withParams:(NSDictionary*)params
             target:(id)target callback:(SEL)callback;
+
+
 
 
 

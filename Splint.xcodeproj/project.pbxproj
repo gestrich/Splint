@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A59720DB28A4CBF9C18AC35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CB317A0ADC40148F2B73A8 /* libPods.a */; };
+		CA0AAFD317A98E1C006CC767 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD217A98E1C006CC767 /* CFNetwork.framework */; };
+		CA0AAFD517A98E2B006CC767 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */; };
+		CA0AAFD717A98E33006CC767 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD617A98E33006CC767 /* Security.framework */; };
+		CA0AAFD917A98E39006CC767 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD817A98E39006CC767 /* ImageIO.framework */; };
+		CA633ED717B9E4D10083B1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9434179D8E04004931C1 /* main.m */; };
+		CA633ED817B9E4D10083B1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9438179D8E04004931C1 /* AppDelegate.m */; };
+		CA633ED917B9E4D10083B1CC /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9444179D8E05004931C1 /* IndexViewController.m */; };
+		CA633EDA17B9E4D10083B1CC /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9451179ED585004931C1 /* VideoViewController.m */; };
+		CA633EDB17B9E4D10083B1CC /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B945D17A186CB004931C1 /* APIWrapper.m */; };
+		CA633EDD17B9E4D10083B1CC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD817A98E39006CC767 /* ImageIO.framework */; };
+		CA633EDE17B9E4D10083B1CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD617A98E33006CC767 /* Security.framework */; };
+		CA633EDF17B9E4D10083B1CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */; };
+		CA633EE017B9E4D10083B1CC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD217A98E1C006CC767 /* CFNetwork.framework */; };
+		CA633EE117B9E4D10083B1CC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B944E179ECE2B004931C1 /* MediaPlayer.framework */; };
+		CA633EE217B9E4D10083B1CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B9428179D8E04004931C1 /* UIKit.framework */; };
+		CA633EE317B9E4D10083B1CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942A179D8E04004931C1 /* Foundation.framework */; };
+		CA633EE417B9E4D10083B1CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942C179D8E04004931C1 /* CoreGraphics.framework */; };
+		CA633EE517B9E4D10083B1CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CB317A0ADC40148F2B73A8 /* libPods.a */; };
+		CA633EE717B9E4D10083B1CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA9B9431179D8E04004931C1 /* InfoPlist.strings */; };
+		CA633EE817B9E4D10083B1CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B943A179D8E05004931C1 /* Default.png */; };
+		CA633EE917B9E4D10083B1CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B943C179D8E05004931C1 /* Default@2x.png */; };
+		CA633EEA17B9E4D10083B1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B943E179D8E05004931C1 /* Default-568h@2x.png */; };
+		CA633EEB17B9E4D10083B1CC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9B9440179D8E05004931C1 /* MainStoryboard.storyboard */; };
+		CA633EEC17B9E4D10083B1CC /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9B944C179D8F07004931C1 /* SplashView.xib */; };
+		CA633EED17B9E4D10083B1CC /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B9454179F6086004931C1 /* hand.png */; };
+		CA633EF517B9E89E0083B1CC /* index_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF417B9E89E0083B1CC /* index_background.png */; };
+		CA633EF717B9EC8F0083B1CC /* index_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF617B9EC8F0083B1CC /* index_background@2x.png */; };
+		CA633EF817B9EC8F0083B1CC /* index_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF617B9EC8F0083B1CC /* index_background@2x.png */; };
 		CA9B9429179D8E04004931C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B9428179D8E04004931C1 /* UIKit.framework */; };
 		CA9B942B179D8E04004931C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942A179D8E04004931C1 /* Foundation.framework */; };
 		CA9B942D179D8E04004931C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942C179D8E04004931C1 /* CoreGraphics.framework */; };
@@ -26,6 +55,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873E270194E248F09CE1398F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CA0AAFD217A98E1C006CC767 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CA0AAFD617A98E33006CC767 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CA0AAFD817A98E39006CC767 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CA633EF217B9E4D10083B1CC /* Splint copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Splint copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Splint copy-Info.plist"; path = "/Users/williamgestrich/Desktop/Splint/Splint copy-Info.plist"; sourceTree = "<absolute>"; };
+		CA633EF417B9E89E0083B1CC /* index_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index_background.png; sourceTree = "<group>"; };
+		CA633EF617B9EC8F0083B1CC /* index_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index_background@2x.png"; sourceTree = "<group>"; };
 		CA9B9425179D8E04004931C1 /* Splint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B9428179D8E04004931C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA9B942A179D8E04004931C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,17 +88,39 @@
 		CA9B945B17A185ED004931C1 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
 		CA9B945C17A186CB004931C1 /* APIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
 		CA9B945D17A186CB004931C1 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
+		F1CB317A0ADC40148F2B73A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA633EDC17B9E4D10083B1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA633EDD17B9E4D10083B1CC /* ImageIO.framework in Frameworks */,
+				CA633EDE17B9E4D10083B1CC /* Security.framework in Frameworks */,
+				CA633EDF17B9E4D10083B1CC /* SystemConfiguration.framework in Frameworks */,
+				CA633EE017B9E4D10083B1CC /* CFNetwork.framework in Frameworks */,
+				CA633EE117B9E4D10083B1CC /* MediaPlayer.framework in Frameworks */,
+				CA633EE217B9E4D10083B1CC /* UIKit.framework in Frameworks */,
+				CA633EE317B9E4D10083B1CC /* Foundation.framework in Frameworks */,
+				CA633EE417B9E4D10083B1CC /* CoreGraphics.framework in Frameworks */,
+				CA633EE517B9E4D10083B1CC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9B9422179D8E04004931C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0AAFD917A98E39006CC767 /* ImageIO.framework in Frameworks */,
+				CA0AAFD717A98E33006CC767 /* Security.framework in Frameworks */,
+				CA0AAFD517A98E2B006CC767 /* SystemConfiguration.framework in Frameworks */,
+				CA0AAFD317A98E1C006CC767 /* CFNetwork.framework in Frameworks */,
 				CA9B944F179ECE2B004931C1 /* MediaPlayer.framework in Frameworks */,
 				CA9B9429179D8E04004931C1 /* UIKit.framework in Frameworks */,
 				CA9B942B179D8E04004931C1 /* Foundation.framework in Frameworks */,
 				CA9B942D179D8E04004931C1 /* CoreGraphics.framework in Frameworks */,
+				1A59720DB28A4CBF9C18AC35 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +130,11 @@
 		CA9B941C179D8E04004931C1 = {
 			isa = PBXGroup;
 			children = (
-				CA9B944E179ECE2B004931C1 /* MediaPlayer.framework */,
 				CA9B942E179D8E04004931C1 /* Splint */,
 				CA9B9427179D8E04004931C1 /* Frameworks */,
 				CA9B9426179D8E04004931C1 /* Products */,
+				873E270194E248F09CE1398F /* Pods.xcconfig */,
+				CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				CA9B9425179D8E04004931C1 /* Splint.app */,
+				CA633EF217B9E4D10083B1CC /* Splint copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,9 +150,15 @@
 		CA9B9427179D8E04004931C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA0AAFD817A98E39006CC767 /* ImageIO.framework */,
+				CA0AAFD617A98E33006CC767 /* Security.framework */,
+				CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */,
+				CA0AAFD217A98E1C006CC767 /* CFNetwork.framework */,
+				CA9B944E179ECE2B004931C1 /* MediaPlayer.framework */,
 				CA9B9428179D8E04004931C1 /* UIKit.framework */,
 				CA9B942A179D8E04004931C1 /* Foundation.framework */,
 				CA9B942C179D8E04004931C1 /* CoreGraphics.framework */,
+				F1CB317A0ADC40148F2B73A8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +206,8 @@
 		CA9B9453179F6070004931C1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CA633EF417B9E89E0083B1CC /* index_background.png */,
+				CA633EF617B9EC8F0083B1CC /* index_background@2x.png */,
 				CA9B9454179F6086004931C1 /* hand.png */,
 			);
 			path = Images;
@@ -156,13 +226,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA633ED417B9E4D10083B1CC /* Splint Heroku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA633EEF17B9E4D10083B1CC /* Build configuration list for PBXNativeTarget "Splint Heroku" */;
+			buildPhases = (
+				CA633ED517B9E4D10083B1CC /* Check Pods Manifest.lock */,
+				CA633ED617B9E4D10083B1CC /* Sources */,
+				CA633EDC17B9E4D10083B1CC /* Frameworks */,
+				CA633EE617B9E4D10083B1CC /* Resources */,
+				CA633EEE17B9E4D10083B1CC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Splint Heroku";
+			productName = Splint;
+			productReference = CA633EF217B9E4D10083B1CC /* Splint copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CA9B9424179D8E04004931C1 /* Splint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9B9448179D8E05004931C1 /* Build configuration list for PBXNativeTarget "Splint" */;
 			buildPhases = (
+				281DC50A5D9D484FB25E09A6 /* Check Pods Manifest.lock */,
 				CA9B9421179D8E04004931C1 /* Sources */,
 				CA9B9422179D8E04004931C1 /* Frameworks */,
 				CA9B9423179D8E04004931C1 /* Resources */,
+				70F2F96EF10545CC9ED1C534 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,11 +286,27 @@
 			projectRoot = "";
 			targets = (
 				CA9B9424179D8E04004931C1 /* Splint */,
+				CA633ED417B9E4D10083B1CC /* Splint Heroku */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA633EE617B9E4D10083B1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA633EE717B9E4D10083B1CC /* InfoPlist.strings in Resources */,
+				CA633EE817B9E4D10083B1CC /* Default.png in Resources */,
+				CA633EE917B9E4D10083B1CC /* Default@2x.png in Resources */,
+				CA633EEA17B9E4D10083B1CC /* Default-568h@2x.png in Resources */,
+				CA633EEB17B9E4D10083B1CC /* MainStoryboard.storyboard in Resources */,
+				CA633EEC17B9E4D10083B1CC /* SplashView.xib in Resources */,
+				CA633EED17B9E4D10083B1CC /* hand.png in Resources */,
+				CA633EF817B9EC8F0083B1CC /* index_background@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9B9423179D8E04004931C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,12 +318,89 @@
 				CA9B9442179D8E05004931C1 /* MainStoryboard.storyboard in Resources */,
 				CA9B944D179D8F07004931C1 /* SplashView.xib in Resources */,
 				CA9B9455179F6086004931C1 /* hand.png in Resources */,
+				CA633EF517B9E89E0083B1CC /* index_background.png in Resources */,
+				CA633EF717B9EC8F0083B1CC /* index_background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		281DC50A5D9D484FB25E09A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70F2F96EF10545CC9ED1C534 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA633ED517B9E4D10083B1CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA633EEE17B9E4D10083B1CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CA633ED617B9E4D10083B1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA633ED717B9E4D10083B1CC /* main.m in Sources */,
+				CA633ED817B9E4D10083B1CC /* AppDelegate.m in Sources */,
+				CA633ED917B9E4D10083B1CC /* IndexViewController.m in Sources */,
+				CA633EDA17B9E4D10083B1CC /* VideoViewController.m in Sources */,
+				CA633EDB17B9E4D10083B1CC /* APIWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9B9421179D8E04004931C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +435,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA633EF017B9E4D10083B1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
+				INFOPLIST_FILE = "Splint copy-Info.plist";
+				PRODUCT_NAME = "Splint copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA633EF117B9E4D10083B1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
+				INFOPLIST_FILE = "Splint copy-Info.plist";
+				PRODUCT_NAME = "Splint copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		CA9B9446179D8E05004931C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -268,10 +476,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -309,9 +514,14 @@
 		};
 		CA9B9449179D8E05004931C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -320,9 +530,14 @@
 		};
 		CA9B944A179D8E05004931C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -332,6 +547,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA633EEF17B9E4D10083B1CC /* Build configuration list for PBXNativeTarget "Splint Heroku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA633EF017B9E4D10083B1CC /* Debug */,
+				CA633EF117B9E4D10083B1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA9B9420179D8E04004931C1 /* Build configuration list for PBXProject "Splint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

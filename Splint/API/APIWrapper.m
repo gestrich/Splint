@@ -9,6 +9,8 @@
 #import "APIWrapper.h"
 #import "Urls.h"
 
+
+
 @implementation APIWrapper
 
 -(id) init{
@@ -23,13 +25,19 @@
 +(APIWrapper*)get{
     
     static APIWrapper *instance = nil; //assigns once
-    static dispatch_once_t onceToken;  //assigns once
+    static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //block executed once
         instance = [[APIWrapper alloc] init];
     });
     
     return instance;
+}
+
++(void)videoIndexForTarget:(id)target callback:(SEL)action
+{
+    APIWrapper *wrapper = [APIWrapper get];
+    [wrapper sendRequest:@"GET" url:[NSURL URLWithString:@"http://localhost:3000/video_index.json"] withParams:nil target:target callback:action];
 }
 
 -(void)sendRequest:(NSString*)actionType url:(NSURL*)url withParams:(NSDictionary*)params
@@ -102,13 +110,13 @@
     NSLog(@"Connection finished");
      [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     NSDictionary *dict = [self.connectionToInfoMapping objectForKey:[NSString stringWithFormat:@"%@", connection]];
-    NSString *responseData = [[NSString alloc] initWithData:dict[@"responseData"] encoding:NSUTF8StringEncoding];
+    //NSString *responseData = [[NSString alloc] initWithData:dict[@"responseData"] encoding:NSUTF8StringEncoding];
     id target = dict[@"target"];
     SEL callback = (SEL)[[dict objectForKey:@"callback" ] pointerValue];
     if(target && [target respondsToSelector:callback]){
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [target performSelector:callback withObject:responseData];
+        [target performSelector:callback withObject:dict[@"responseData"]];
 #pragma clang diagnostic pop
     }
 }
