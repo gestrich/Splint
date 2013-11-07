@@ -13,7 +13,6 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if(self){
-        //self.moviePlayer = [[MPMoviePlayerController alloc] init];
     }
     return self;
 }

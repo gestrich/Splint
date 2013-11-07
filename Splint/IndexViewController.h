@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface IndexViewController : UITableViewController
-- (IBAction)showVideo:(UIButton *)sender;
 
 @end

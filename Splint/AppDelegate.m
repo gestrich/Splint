@@ -6,11 +6,15 @@
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
 
+//NSString* const kBaseURL = @"restfulengine.iosptl.com";
+NSString* const kBaseURL = @"localhost:3000";
+
 #define SPLASH_VIEW_TAG 1001
 #define HAND_IMAGE_TAG 2001
 #define SPLASH_VIEW_TIME 3
 
 #import "AppDelegate.h"
+#import "RESTfulOperation.h"
 
 @implementation AppDelegate
 
@@ -36,6 +40,11 @@
     NSDate *fireTime = [NSDate dateWithTimeIntervalSinceNow:SPLASH_VIEW_TIME ];
     NSTimer *timer = [[NSTimer alloc] initWithFireDate:fireTime interval:0.0 target:self selector:@selector(removeSplashView) userInfo:nil repeats:NO];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    //instantiate network engine
+    self.engine = [[RESTfulEngine alloc] initWithHostName:kBaseURL];
+    [self.engine useCache];
+    [self.engine registerOperationSubclass:[RESTfulOperation class]];
     
     return YES;
 }

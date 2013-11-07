@@ -12,6 +12,7 @@
 		CA0AAFD517A98E2B006CC767 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */; };
 		CA0AAFD717A98E33006CC767 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD617A98E33006CC767 /* Security.framework */; };
 		CA0AAFD917A98E39006CC767 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD817A98E39006CC767 /* ImageIO.framework */; };
+		CA53D94A17F0983D00E58897 /* Errors_en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA53D94917F0983D00E58897 /* Errors_en_US.plist */; };
 		CA633ED717B9E4D10083B1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9434179D8E04004931C1 /* main.m */; };
 		CA633ED817B9E4D10083B1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9438179D8E04004931C1 /* AppDelegate.m */; };
 		CA633ED917B9E4D10083B1CC /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9444179D8E05004931C1 /* IndexViewController.m */; };
@@ -52,6 +53,12 @@
 		CA9B9452179ED585004931C1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9451179ED585004931C1 /* VideoViewController.m */; };
 		CA9B9455179F6086004931C1 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B9454179F6086004931C1 /* hand.png */; };
 		CA9B945E17A186CB004931C1 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B945D17A186CB004931C1 /* APIWrapper.m */; };
+		CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */; };
+		CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */; };
+		CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61617E3578300ACF47C /* RESTfulOperation.m */; };
+		CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61917E357AF00ACF47C /* RESTError.m */; };
+		CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61C17E357E000ACF47C /* JSONModel.m */; };
+		CAF1A62617E8A6B300ACF47C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A62517E8A6B300ACF47C /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +67,7 @@
 		CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CA0AAFD617A98E33006CC767 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CA0AAFD817A98E39006CC767 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CA53D94917F0983D00E58897 /* Errors_en_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Errors_en_US.plist; sourceTree = "<group>"; };
 		CA633EF217B9E4D10083B1CC /* Splint copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Splint copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Splint copy-Info.plist"; path = "/Users/williamgestrich/Desktop/Splint/Splint copy-Info.plist"; sourceTree = "<absolute>"; };
 		CA633EF417B9E89E0083B1CC /* index_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index_background.png; sourceTree = "<group>"; };
@@ -88,6 +96,18 @@
 		CA9B945B17A185ED004931C1 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
 		CA9B945C17A186CB004931C1 /* APIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
 		CA9B945D17A186CB004931C1 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
+		CAA54F1E18146CF30097AFA3 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		CAF1A61217E3573F00ACF47C /* RESTfulEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulEngine.h; sourceTree = "<group>"; };
+		CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulEngine.m; sourceTree = "<group>"; };
+		CAF1A61517E3578300ACF47C /* RESTfulOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulOperation.h; sourceTree = "<group>"; };
+		CAF1A61617E3578300ACF47C /* RESTfulOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulOperation.m; sourceTree = "<group>"; };
+		CAF1A61817E357AF00ACF47C /* RESTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTError.h; sourceTree = "<group>"; };
+		CAF1A61917E357AF00ACF47C /* RESTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTError.m; sourceTree = "<group>"; };
+		CAF1A61B17E357E000ACF47C /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		CAF1A61C17E357E000ACF47C /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		CAF1A62417E8A6B200ACF47C /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		CAF1A62517E8A6B300ACF47C /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		F1CB317A0ADC40148F2B73A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -166,17 +186,16 @@
 		CA9B942E179D8E04004931C1 /* Splint */ = {
 			isa = PBXGroup;
 			children = (
+				CAF1A62817EDEA8500ACF47C /* Model */,
+				CAF1A62717EDEA5600ACF47C /* View Controllers */,
+				CAF1A61117E3571A00ACF47C /* RESTEngine */,
 				CA9B945A17A185CB004931C1 /* API */,
 				CA9B9453179F6070004931C1 /* Images */,
 				CA9B944B179D8EC9004931C1 /* Splash */,
 				CA9B9437179D8E04004931C1 /* AppDelegate.h */,
 				CA9B9438179D8E04004931C1 /* AppDelegate.m */,
 				CA9B9440179D8E05004931C1 /* MainStoryboard.storyboard */,
-				CA9B9443179D8E05004931C1 /* IndexViewController.h */,
-				CA9B9444179D8E05004931C1 /* IndexViewController.m */,
 				CA9B942F179D8E04004931C1 /* Supporting Files */,
-				CA9B9450179ED585004931C1 /* VideoViewController.h */,
-				CA9B9451179ED585004931C1 /* VideoViewController.m */,
 			);
 			path = Splint;
 			sourceTree = "<group>";
@@ -221,6 +240,46 @@
 				CA9B945D17A186CB004931C1 /* APIWrapper.m */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CAF1A61117E3571A00ACF47C /* RESTEngine */ = {
+			isa = PBXGroup;
+			children = (
+				CAF1A61517E3578300ACF47C /* RESTfulOperation.h */,
+				CAF1A61617E3578300ACF47C /* RESTfulOperation.m */,
+				CAF1A61217E3573F00ACF47C /* RESTfulEngine.h */,
+				CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */,
+				CAF1A61817E357AF00ACF47C /* RESTError.h */,
+				CAF1A61917E357AF00ACF47C /* RESTError.m */,
+				CA53D94917F0983D00E58897 /* Errors_en_US.plist */,
+				CAA54F1E18146CF30097AFA3 /* UIAlertView+Blocks.h */,
+				CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */,
+			);
+			name = RESTEngine;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CAF1A62717EDEA5600ACF47C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA9B9443179D8E05004931C1 /* IndexViewController.h */,
+				CA9B9444179D8E05004931C1 /* IndexViewController.m */,
+				CA9B9450179ED585004931C1 /* VideoViewController.h */,
+				CA9B9451179ED585004931C1 /* VideoViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CAF1A62817EDEA8500ACF47C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAF1A61B17E357E000ACF47C /* JSONModel.h */,
+				CAF1A61C17E357E000ACF47C /* JSONModel.m */,
+				CAF1A62417E8A6B200ACF47C /* Video.h */,
+				CAF1A62517E8A6B300ACF47C /* Video.m */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +331,16 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "William Gestrich";
+				TargetAttributes = {
+					CA9B9424179D8E04004931C1 = {
+						DevelopmentTeam = 5K844XFC6W;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = CA9B9420179D8E04004931C1 /* Build configuration list for PBXProject "Splint" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,6 +389,7 @@
 				CA9B9455179F6086004931C1 /* hand.png in Resources */,
 				CA633EF517B9E89E0083B1CC /* index_background.png in Resources */,
 				CA633EF717B9EC8F0083B1CC /* index_background@2x.png in Resources */,
+				CA53D94A17F0983D00E58897 /* Errors_en_US.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +480,12 @@
 				CA9B9445179D8E05004931C1 /* IndexViewController.m in Sources */,
 				CA9B9452179ED585004931C1 /* VideoViewController.m in Sources */,
 				CA9B945E17A186CB004931C1 /* APIWrapper.m in Sources */,
+				CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */,
+				CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */,
+				CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */,
+				CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */,
+				CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */,
+				CAF1A62617E8A6B300ACF47C /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +592,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -523,7 +601,9 @@
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,6 +612,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 873E270194E248F09CE1398F /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -539,7 +621,9 @@
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

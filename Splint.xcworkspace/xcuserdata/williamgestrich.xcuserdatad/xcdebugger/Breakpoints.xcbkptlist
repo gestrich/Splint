@@ -2,13 +2,20 @@
 <Bucket
    type = "0"
    version = "1.0">
-   <ExceptionBreakpoints>
-      <ExceptionBreakpoint
+   <SymbolicBreakpoints>
+      <SymbolicBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         scope = "0"
-         stopOnStyle = "0">
-      </ExceptionBreakpoint>
-   </ExceptionBreakpoints>
+         symbolName = "-[NSRangeException raise]"
+         moduleName = "libc++abi.dylib">
+         <Actions>
+            <BreakpointActionProxy
+               ActionType = "Xcode.BreakpointAction.DebuggerCommand">
+               <ActionContent>
+               </ActionContent>
+            </BreakpointActionProxy>
+         </Actions>
+      </SymbolicBreakpoint>
+   </SymbolicBreakpoints>
 </Bucket>
