@@ -12,6 +12,9 @@
 		CA0AAFD517A98E2B006CC767 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */; };
 		CA0AAFD717A98E33006CC767 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD617A98E33006CC767 /* Security.framework */; };
 		CA0AAFD917A98E39006CC767 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AAFD817A98E39006CC767 /* ImageIO.framework */; };
+		CA51914E182C873100AA04E3 /* CollectionVcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA51914D182C873100AA04E3 /* CollectionVcViewController.m */; };
+		CA519154182C875D00AA04E3 /* SupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA519151182C875D00AA04E3 /* SupplementaryView.m */; };
+		CA519155182C875D00AA04E3 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA519153182C875D00AA04E3 /* CollectionViewCell.m */; };
 		CA53D94A17F0983D00E58897 /* Errors_en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA53D94917F0983D00E58897 /* Errors_en_US.plist */; };
 		CA633ED717B9E4D10083B1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9434179D8E04004931C1 /* main.m */; };
 		CA633ED817B9E4D10083B1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9438179D8E04004931C1 /* AppDelegate.m */; };
@@ -67,6 +70,12 @@
 		CA0AAFD417A98E2B006CC767 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CA0AAFD617A98E33006CC767 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CA0AAFD817A98E39006CC767 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CA51914C182C873100AA04E3 /* CollectionVcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionVcViewController.h; sourceTree = "<group>"; };
+		CA51914D182C873100AA04E3 /* CollectionVcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionVcViewController.m; sourceTree = "<group>"; };
+		CA519150182C875D00AA04E3 /* SupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplementaryView.h; sourceTree = "<group>"; };
+		CA519151182C875D00AA04E3 /* SupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplementaryView.m; sourceTree = "<group>"; };
+		CA519152182C875D00AA04E3 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		CA519153182C875D00AA04E3 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		CA53D94917F0983D00E58897 /* Errors_en_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Errors_en_US.plist; sourceTree = "<group>"; };
 		CA633EF217B9E4D10083B1CC /* Splint copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Splint copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Splint copy-Info.plist"; path = "/Users/williamgestrich/Desktop/Splint/Splint copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -93,7 +102,7 @@
 		CA9B9450179ED585004931C1 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		CA9B9451179ED585004931C1 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		CA9B9454179F6086004931C1 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
-		CA9B945B17A185ED004931C1 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
+		CA9B945B17A185ED004931C1 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Urls.h; path = Splint/API/Urls.h; sourceTree = "<group>"; };
 		CA9B945C17A186CB004931C1 /* APIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
 		CA9B945D17A186CB004931C1 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
 		CAA54F1E18146CF30097AFA3 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
@@ -108,6 +117,7 @@
 		CAF1A61C17E357E000ACF47C /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
 		CAF1A62417E8A6B200ACF47C /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		CAF1A62517E8A6B300ACF47C /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		CAF62CD2182EC26900C14441 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		F1CB317A0ADC40148F2B73A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,9 +157,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA51914F182C874600AA04E3 /* Collection View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA51914C182C873100AA04E3 /* CollectionVcViewController.h */,
+				CA51914D182C873100AA04E3 /* CollectionVcViewController.m */,
+				CA519150182C875D00AA04E3 /* SupplementaryView.h */,
+				CA519151182C875D00AA04E3 /* SupplementaryView.m */,
+				CA519152182C875D00AA04E3 /* CollectionViewCell.h */,
+				CA519153182C875D00AA04E3 /* CollectionViewCell.m */,
+			);
+			name = "Collection View Controller";
+			sourceTree = "<group>";
+		};
 		CA9B941C179D8E04004931C1 = {
 			isa = PBXGroup;
 			children = (
+				CAF62CD2182EC26900C14441 /* Reveal.framework */,
 				CA9B942E179D8E04004931C1 /* Splint */,
 				CA9B9427179D8E04004931C1 /* Frameworks */,
 				CA9B9426179D8E04004931C1 /* Products */,
@@ -186,10 +210,11 @@
 		CA9B942E179D8E04004931C1 /* Splint */ = {
 			isa = PBXGroup;
 			children = (
+				CA51914F182C874600AA04E3 /* Collection View Controller */,
 				CAF1A62817EDEA8500ACF47C /* Model */,
 				CAF1A62717EDEA5600ACF47C /* View Controllers */,
 				CAF1A61117E3571A00ACF47C /* RESTEngine */,
-				CA9B945A17A185CB004931C1 /* API */,
+				CA9B945A17A185CB004931C1 /* Old API */,
 				CA9B9453179F6070004931C1 /* Images */,
 				CA9B944B179D8EC9004931C1 /* Splash */,
 				CA9B9437179D8E04004931C1 /* AppDelegate.h */,
@@ -232,19 +257,20 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		CA9B945A17A185CB004931C1 /* API */ = {
+		CA9B945A17A185CB004931C1 /* Old API */ = {
 			isa = PBXGroup;
 			children = (
-				CA9B945B17A185ED004931C1 /* Urls.h */,
 				CA9B945C17A186CB004931C1 /* APIWrapper.h */,
 				CA9B945D17A186CB004931C1 /* APIWrapper.m */,
 			);
+			name = "Old API";
 			path = API;
 			sourceTree = "<group>";
 		};
 		CAF1A61117E3571A00ACF47C /* RESTEngine */ = {
 			isa = PBXGroup;
 			children = (
+				CA9B945B17A185ED004931C1 /* Urls.h */,
 				CAF1A61517E3578300ACF47C /* RESTfulOperation.h */,
 				CAF1A61617E3578300ACF47C /* RESTfulOperation.m */,
 				CAF1A61217E3573F00ACF47C /* RESTfulEngine.h */,
@@ -313,6 +339,7 @@
 				CA9B9422179D8E04004931C1 /* Frameworks */,
 				CA9B9423179D8E04004931C1 /* Resources */,
 				70F2F96EF10545CC9ED1C534 /* Copy Pods Resources */,
+				CABC00B1183726F300BA02FB /* Run Server */,
 			);
 			buildRules = (
 			);
@@ -456,6 +483,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CABC00B1183726F300BA02FB /* Run Server */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			name = "Run Server";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "~/Desktop/splint_server/run.sh > ~/Desktop/splint_server/test 2>&1 &";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -480,12 +522,15 @@
 				CA9B9445179D8E05004931C1 /* IndexViewController.m in Sources */,
 				CA9B9452179ED585004931C1 /* VideoViewController.m in Sources */,
 				CA9B945E17A186CB004931C1 /* APIWrapper.m in Sources */,
+				CA519154182C875D00AA04E3 /* SupplementaryView.m in Sources */,
 				CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */,
 				CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */,
 				CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */,
 				CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */,
 				CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */,
 				CAF1A62617E8A6B300ACF47C /* Video.m in Sources */,
+				CA519155182C875D00AA04E3 /* CollectionViewCell.m in Sources */,
+				CA51914E182C873100AA04E3 /* CollectionVcViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +639,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/williamgestrich/Desktop/Splint,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -602,6 +651,18 @@
 				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -614,6 +675,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/williamgestrich/Desktop/Splint,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -622,6 +687,18 @@
 				);
 				INFOPLIST_FILE = "Splint/Splint-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
