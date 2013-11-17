@@ -12,11 +12,13 @@
 #import <MediaToolbox/MediaToolbox.h>
 
 #import "VideoViewController.h"
+#import "IndexCell.h"
 #import "Video.h"
 #import "RESTError.h"
 #import "Urls.h"
 
 #define INDEX_CELL_ID @"index_cell"
+#define INDEX_CELL_HEIGHT 80.
 
 @interface IndexViewController ()
 
@@ -43,7 +45,7 @@
         
          NSLog(@"array = %@", listOfModelBaseObjects);
          self.videoItems = listOfModelBaseObjects;
-         [self.tableView reloadData];
+         [self.collectionView reloadData];
          
     } onError:^(NSError *engineError) {
         [UIAlertView showWithError:engineError];
@@ -51,6 +53,7 @@
      
     
 }
+
 
 -(void)videoIndexRows:(id)responseData{
     
@@ -67,9 +70,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    [collectionView deselectItemAtIndexPath:indexPath animated:NO];
     Video *video = [self.videoItems objectAtIndex:indexPath.row];
     [self showVideo:video.urlString];
 }
@@ -86,25 +89,36 @@
 
 #pragma mark - UITableViewDataSource Delegate
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [self.videoItems count];
 }
 
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell;
+
+-(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    IndexCell *cell;
     
     Video *video = [self.videoItems objectAtIndex:indexPath.row];
-    cell = [self.tableView dequeueReusableCellWithIdentifier:INDEX_CELL_ID];
-    cell.textLabel.text = video.title;
-    cell.detailTextLabel.text = video.videoLength;
+    cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:INDEX_CELL_ID forIndexPath:indexPath];
+    cell.titleView.text = video.title;
+    cell.timeView.text = video.videoLength;
     return cell;
     
 }
 
+#pragma mark - UICollectionViewDelegateFlowLayout
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 30.;
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(self.collectionView.frame.size.width, INDEX_CELL_HEIGHT);
+
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.collectionViewLayout invalidateLayout];
+}
 
 @end

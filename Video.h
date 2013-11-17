@@ -13,5 +13,4 @@
 @property NSString *urlString;
 @property NSString *title;
 @property NSString *videoLength;
-
 @end

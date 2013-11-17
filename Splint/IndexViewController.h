@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexViewController : UITableViewController
+@interface IndexViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+
 
 @end
