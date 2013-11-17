@@ -11,6 +11,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+#if TARGET_IPHONE_SIMULATOR
+#define BASE_URL @"localhost:3000/"
+#else
+#define BASE_URL @"desolate-island-3918.herokuapp.com/"
+#endif
 
 
 @property (strong, nonatomic) UIWindow *window;

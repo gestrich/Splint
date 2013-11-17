@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
 
-//NSString* const kBaseURL = @"restfulengine.iosptl.com";
-NSString* const kBaseURL = @"localhost:3000";
+
 
 #define SPLASH_VIEW_TAG 1001
 #define HAND_IMAGE_TAG 2001
@@ -42,7 +41,7 @@ NSString* const kBaseURL = @"localhost:3000";
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     //instantiate network engine
-    self.engine = [[RESTfulEngine alloc] initWithHostName:kBaseURL];
+    self.engine = [[RESTfulEngine alloc] initWithHostName:BASE_URL];
     [self.engine useCache];
     [self.engine registerOperationSubclass:[RESTfulOperation class]];
     

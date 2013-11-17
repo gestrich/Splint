@@ -80,7 +80,7 @@
 - (void)showVideo:(NSString *)urlString {
 
     NSString *url = [BASE_URL stringByAppendingString: urlString];
-
+    url = [@"http://" stringByAppendingString:url];
     VideoViewController *videoVc = [[VideoViewController alloc] initWithContentURL:[NSURL URLWithString:url]];
     [self presentMoviePlayerViewControllerAnimated:videoVc];
 }

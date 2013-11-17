@@ -505,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "~/Desktop/splint_server/run.sh > ~/Desktop/splint_server/test 2>&1 &";
+			shellScript = "~/Desktop/splint_server/run.sh > ~/Desktop/splint_server/node_log 2>&1 &";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -674,7 +674,7 @@
 					Reveal,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "971C6731-ECDA-445C-9863-D13323508741";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -710,7 +710,7 @@
 					Reveal,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "971C6731-ECDA-445C-9863-D13323508741";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
