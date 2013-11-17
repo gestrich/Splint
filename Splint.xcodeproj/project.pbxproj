@@ -57,6 +57,8 @@
 		CA9B9455179F6086004931C1 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9B9454179F6086004931C1 /* hand.png */; };
 		CA9B945E17A186CB004931C1 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B945D17A186CB004931C1 /* APIWrapper.m */; };
 		CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */; };
+		CABC00B418381E9600BA02FB /* IndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CABC00B318381E9600BA02FB /* IndexCell.m */; };
+		CAE757D818383501004DC892 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE757D718383501004DC892 /* Media.xcassets */; };
 		CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */; };
 		CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61617E3578300ACF47C /* RESTfulOperation.m */; };
 		CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61917E357AF00ACF47C /* RESTError.m */; };
@@ -107,6 +109,9 @@
 		CA9B945D17A186CB004931C1 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
 		CAA54F1E18146CF30097AFA3 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		CABC00B218381E9600BA02FB /* IndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCell.h; sourceTree = "<group>"; };
+		CABC00B318381E9600BA02FB /* IndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCell.m; sourceTree = "<group>"; };
+		CAE757D718383501004DC892 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		CAF1A61217E3573F00ACF47C /* RESTfulEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulEngine.h; sourceTree = "<group>"; };
 		CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulEngine.m; sourceTree = "<group>"; };
 		CAF1A61517E3578300ACF47C /* RESTfulOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulOperation.h; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 				CA9B942E179D8E04004931C1 /* Splint */,
 				CA9B9427179D8E04004931C1 /* Frameworks */,
 				CA9B9426179D8E04004931C1 /* Products */,
+				CAE757D718383501004DC892 /* Media.xcassets */,
 				873E270194E248F09CE1398F /* Pods.xcconfig */,
 				CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */,
 			);
@@ -288,6 +294,8 @@
 		CAF1A62717EDEA5600ACF47C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CABC00B218381E9600BA02FB /* IndexCell.h */,
+				CABC00B318381E9600BA02FB /* IndexCell.m */,
 				CA9B9443179D8E05004931C1 /* IndexViewController.h */,
 				CA9B9444179D8E05004931C1 /* IndexViewController.m */,
 				CA9B9450179ED585004931C1 /* VideoViewController.h */,
@@ -412,6 +420,7 @@
 				CA9B943D179D8E05004931C1 /* Default@2x.png in Resources */,
 				CA9B943F179D8E05004931C1 /* Default-568h@2x.png in Resources */,
 				CA9B9442179D8E05004931C1 /* MainStoryboard.storyboard in Resources */,
+				CAE757D818383501004DC892 /* Media.xcassets in Resources */,
 				CA9B944D179D8F07004931C1 /* SplashView.xib in Resources */,
 				CA9B9455179F6086004931C1 /* hand.png in Resources */,
 				CA633EF517B9E89E0083B1CC /* index_background.png in Resources */,
@@ -528,6 +537,7 @@
 				CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */,
 				CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */,
 				CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */,
+				CABC00B418381E9600BA02FB /* IndexCell.m in Sources */,
 				CAF1A62617E8A6B300ACF47C /* Video.m in Sources */,
 				CA519155182C875D00AA04E3 /* CollectionViewCell.m in Sources */,
 				CA51914E182C873100AA04E3 /* CollectionVcViewController.m in Sources */,
