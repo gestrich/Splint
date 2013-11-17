@@ -15,29 +15,29 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EQ1-t1-1xf">
-                            <size key="itemSize" width="320" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="27"/>
+                            <size key="itemSize" width="320" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="26"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="index_cell" id="MFR-SR-M9T" customClass="IndexCell">
-                                <rect key="frame" x="80" y="27" width="320" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" reuseIdentifier="index_cell" id="MFR-SR-M9T" customClass="IndexCell">
+                                <rect key="frame" x="80" y="26" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ3-jG-cCg">
-                                            <rect key="frame" x="20" y="14" width="189" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ3-jG-cCg">
+                                            <rect key="frame" x="20" y="29" width="189" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKu-ML-IdC">
-                                            <rect key="frame" x="217" y="14" width="42" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKu-ML-IdC">
+                                            <rect key="frame" x="264" y="29" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -47,6 +47,11 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="OJ3-jG-cCg" secondAttribute="centerY" id="Gxj-kf-e41"/>
+                                    <constraint firstAttribute="trailing" secondItem="LKu-ML-IdC" secondAttribute="trailing" constant="20" id="HkW-s0-afq"/>
+                                    <constraint firstAttribute="centerY" secondItem="LKu-ML-IdC" secondAttribute="centerY" id="QSE-09-rFb"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="timeView" destination="LKu-ML-IdC" id="gfM-DY-PvR"/>
                                     <outlet property="titleView" destination="OJ3-jG-cCg" id="k8e-1y-KI4"/>
@@ -54,7 +59,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S7t-Iu-xry">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="27"/>
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="26"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>

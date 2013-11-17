@@ -2,6 +2,6 @@
 Pods
 .UserInterfaceState.xcuserstate
 .*gitignore
-Splint.xcworkspace/xcshareddata
-Splint.xcworkspace/xcuserdata
+Splint.xcworkspace/xcshareddata/
+Splint.xcworkspace/xcuserdata/
 output

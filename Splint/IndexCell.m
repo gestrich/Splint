@@ -14,28 +14,33 @@
     self = [super initWithCoder:aDecoder];
     if(self){
 
-        self.layer.shadowColor = [UIColor blackColor].CGColor;
-        self.layer.shadowOpacity = 0.6f;
-        self.layer.shadowOffset = CGSizeMake(10.0f, 10.0f);
-        self.layer.shadowRadius = 5.0f;
-        self.layer.masksToBounds = NO;
-        
-        UIBezierPath *path = [UIBezierPath bezierPathWithRect:self.bounds];
-        self.layer.shadowPath = path.CGPath;
-        
-        self.layer.shouldRasterize = YES;
+
     }
     
     return self;
 }
 
-/*
+-(void)layoutSubviews{
+    
+}
+
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowOpacity = 0.4f;
+    self.layer.shadowOffset = CGSizeMake(10.0f, 10.0f);
+    self.layer.shadowRadius = 5.0f;
+    self.layer.masksToBounds = NO;
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:self.bounds];
+    self.layer.shadowPath = path.CGPath;
+    
+    self.layer.shouldRasterize = YES;
 }
-*/
+
 
 @end

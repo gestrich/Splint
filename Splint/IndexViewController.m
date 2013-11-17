@@ -18,6 +18,7 @@
 #import "Urls.h"
 
 #define INDEX_CELL_ID @"index_cell"
+#define INDEX_CELL_HEIGHT 80.
 
 @interface IndexViewController ()
 
@@ -106,6 +107,18 @@
     cell.timeView.text = video.videoLength;
     return cell;
     
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(self.collectionView.frame.size.width, INDEX_CELL_HEIGHT);
+
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.collectionViewLayout invalidateLayout];
 }
 
 @end
