@@ -1,2 +1,9 @@
 .DS_Store
 Pods
+Splint.xcworkspace/xcshareddata/
+output
+.gitignore
+Splint.xcworkspace/xcuserdata/williamgestrich.xcuserdatad/UserInterfaceState.xcuserstate
+Splint/en.lproj/MainStoryboard.storyboard
+
+Splint.xcworkspace/xcuserdata/*
