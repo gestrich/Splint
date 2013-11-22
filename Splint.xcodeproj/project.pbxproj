@@ -58,6 +58,7 @@
 		CA9B945E17A186CB004931C1 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B945D17A186CB004931C1 /* APIWrapper.m */; };
 		CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */; };
 		CABC00B418381E9600BA02FB /* IndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CABC00B318381E9600BA02FB /* IndexCell.m */; };
+		CACF9A42183F2E810003547C /* AppDelegate.delete in Sources */ = {isa = PBXBuildFile; fileRef = CACF9A41183F2E810003547C /* AppDelegate.delete */; };
 		CAE757D818383501004DC892 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE757D718383501004DC892 /* Media.xcassets */; };
 		CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */; };
 		CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61617E3578300ACF47C /* RESTfulOperation.m */; };
@@ -65,6 +66,20 @@
 		CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A61C17E357E000ACF47C /* JSONModel.m */; };
 		CAF1A62617E8A6B300ACF47C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF1A62517E8A6B300ACF47C /* Video.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		CACF9A3F183F23DC0003547C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.m";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/${INPUT_FILE_BASE}.h-processed",
+			);
+			script = "/Users/williamgestrich/Desktop/Splint/testScript.sh \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.delete\"";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		873E270194E248F09CE1398F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -111,6 +126,7 @@
 		CAA54F1F18146CF30097AFA3 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		CABC00B218381E9600BA02FB /* IndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCell.h; sourceTree = "<group>"; };
 		CABC00B318381E9600BA02FB /* IndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCell.m; sourceTree = "<group>"; };
+		CACF9A41183F2E810003547C /* AppDelegate.delete */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppDelegate.delete; sourceTree = "<group>"; };
 		CAE757D718383501004DC892 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		CAF1A61217E3573F00ACF47C /* RESTfulEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulEngine.h; sourceTree = "<group>"; };
 		CAF1A61317E3573F00ACF47C /* RESTfulEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulEngine.m; sourceTree = "<group>"; };
@@ -178,6 +194,7 @@
 		CA9B941C179D8E04004931C1 = {
 			isa = PBXGroup;
 			children = (
+				CACF9A41183F2E810003547C /* AppDelegate.delete */,
 				CAF62CD2182EC26900C14441 /* Reveal.framework */,
 				CA9B942E179D8E04004931C1 /* Splint */,
 				CA9B9427179D8E04004931C1 /* Frameworks */,
@@ -350,6 +367,7 @@
 				CABC00B1183726F300BA02FB /* Run Server */,
 			);
 			buildRules = (
+				CACF9A3F183F23DC0003547C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -527,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9B9435179D8E04004931C1 /* main.m in Sources */,
+				CACF9A42183F2E810003547C /* AppDelegate.delete in Sources */,
 				CA9B9439179D8E04004931C1 /* AppDelegate.m in Sources */,
 				CA9B9445179D8E05004931C1 /* IndexViewController.m in Sources */,
 				CA9B9452179ED585004931C1 /* VideoViewController.m in Sources */,
