@@ -9,7 +9,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "Urls.h"
 
 @interface APIWrapper : NSObject<NSURLConnectionDelegate>
 

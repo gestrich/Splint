@@ -32,7 +32,7 @@
     UIView *handImage = [splashView viewWithTag:HAND_IMAGE_TAG];
     handImage.alpha = 0.0;
     [UIView animateWithDuration:1.0 animations:^{
-        handImage.alpha = 3.0;
+        handImage.alpha = 1.0;
     }];
 
     //set time to display splash view -- remove view after expiration

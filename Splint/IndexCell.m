@@ -5,12 +5,7 @@
 //  Created by William Gestrich on 11/16/13.
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
-//TODO;
-//TODO
-//TODO:
-//TODO:
-//TODO:
-//
+
 #import "IndexCell.h"
 
 @implementation IndexCell
@@ -18,7 +13,6 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if(self){
-        NSLog(@"Test");
 
     }
     

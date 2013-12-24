@@ -15,7 +15,6 @@
 #import "IndexCell.h"
 #import "Video.h"
 #import "RESTError.h"
-#import "Urls.h"
 
 #define INDEX_CELL_ID @"index_cell"
 #define INDEX_CELL_HEIGHT 80.
@@ -43,7 +42,6 @@
     AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
      [delegate.engine fetchVideoItemsOnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
         
-         NSLog(@"array = %@", listOfModelBaseObjects);
          self.videoItems = listOfModelBaseObjects;
          [self.collectionView reloadData];
          
