@@ -11,10 +11,10 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <MediaToolbox/MediaToolbox.h>
 
-#import "VideoViewController.h"
 #import "IndexCell.h"
 #import "Video.h"
 #import "RESTError.h"
+#import "ContentDetailViewController.h"
 
 #define INDEX_CELL_ID @"index_cell"
 #define INDEX_CELL_HEIGHT 80.
@@ -79,8 +79,11 @@
 
     NSString *url = [BASE_URL stringByAppendingString: urlString];
     url = [@"http://" stringByAppendingString:url];
-    VideoViewController *videoVc = [[VideoViewController alloc] initWithContentURL:[NSURL URLWithString:url]];
-    [self presentMoviePlayerViewControllerAnimated:videoVc];
+    ContentDetailViewController *contentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"content"];
+    contentVC.videoURL = [NSURL URLWithString:url];
+    
+    [self.navigationController pushViewController:contentVC animated:YES];
+    
 }
 
 
