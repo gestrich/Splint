@@ -477,7 +477,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "~/Desktop/splint_server/run.sh > ~/Desktop/splint_server/node_log 2>&1 &";
+			shellScript = "~/dev/splint_server/run.sh > ~/dev/splint_server/node_log 2>&1 &";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -619,7 +619,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/williamgestrich/Desktop/Splint,
+					/Users/williamgestrich/dev/Splint,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";
@@ -653,7 +653,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/williamgestrich/Desktop/Splint,
+					/Users/williamgestrich/dev/Splint,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Splint/Splint-Prefix.pch";

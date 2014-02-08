@@ -19,9 +19,11 @@ typedef void (^ModelBlock)(JSONModel* aModelBaseObject);
 typedef void (^ArrayBlock)(NSMutableArray* listOfModelBaseObjects);
 typedef void (^ErrorBlock)(NSError* engineError);
 
-@interface RESTfulEngine : MKNetworkEngine 
+@interface RESTfulEngine : MKNetworkEngine
 
 -(RESTfulOperation*) fetchVideoItemsOnSucceeded:(ArrayBlock) succeededBlock
                                        onError:(ErrorBlock) errorBlock;
 
+-(RESTfulOperation*) fetchImageItem:(NSString *)path OnSucceeded:(ArrayBlock) succeededBlock
+                            onError:(ErrorBlock) errorBlock;
 @end

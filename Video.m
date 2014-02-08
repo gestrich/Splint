@@ -20,6 +20,8 @@
     [encoder encodeObject:self.urlString forKey:@"UrlString"];
     [encoder encodeObject:self.title forKey:@"Title"];
     [encoder encodeObject:self.videoLength forKey:@"VideoLength"];
+    [encoder encodeObject:self.imageUrl forKey:@"ImageUrl"];
+
 }
 
 - (id)initWithCoder:(NSCoder *)decoder
@@ -30,7 +32,9 @@
         if ([decoder containsValueForKey:@"Title"])
             self.title = [decoder decodeObjectForKey:@"Title"];
         if ([decoder containsValueForKey:@"VideoLength"])
-            self.videoLength = [decoder decodeObjectForKey:@"VideoLength"];
+            self.imageUrl = [decoder decodeObjectForKey:@"VideoLength"];
+        if ([decoder containsValueForKey:@"ImageUrl"])
+            self.imageUrl = [decoder decodeObjectForKey:@"ImageUrl"];
     }
     return self;
 }
@@ -43,6 +47,7 @@
     [theCopy setUrlString:[self.urlString copy]];
     [theCopy setTitle:[self.title copy]];
     [theCopy setVideoLength:[self.videoLength copy]];
+    [theCopy setImageUrl:[self.imageUrl copy]];
     
     return theCopy;
 }

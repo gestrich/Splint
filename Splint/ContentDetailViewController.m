@@ -23,9 +23,17 @@
 	// Do any additional setup after loading the view.
     self.player = [[MPMoviePlayerController alloc] initWithContentURL:self.videoURL];
     [self.player prepareToPlay];
-    [self.player.view setFrame:self.videoContainerView.bounds];
+    //[self.player.view setFrame:self.videoContainerView.bounds];
     [self.videoContainerView addSubview:self.player.view];
-    [self.player play];
+    
+    [self.player.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.videoContainerView setTranslatesAutoresizingMaskIntoConstraints: NO];
+    UIView *playerView = self.player.view;
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[playerView]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(playerView)];
+    [self.videoContainerView addConstraints:constraints];
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[playerView]-1-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(playerView)];
+    [self.videoContainerView addConstraints:constraints];
+    //[self.player play];
     
 }
 

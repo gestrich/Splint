@@ -10,7 +10,6 @@
 
 @interface IndexCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *timeView;
 @property (weak, nonatomic) IBOutlet UILabel *titleView;
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

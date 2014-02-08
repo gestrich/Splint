@@ -44,6 +44,27 @@
     return op;
 }
 
+
+ 
+-(RESTfulOperation*) fetchImageItem:(NSString *)path OnSucceeded:(ArrayBlock) succeededBlock
+                                       onError:(ErrorBlock) errorBlock{
+    RESTfulOperation *op = (RESTfulOperation*) [self operationWithPath:path];
+    
+    [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
+        
+        UIImage *image = [completedOperation responseImage];
+
+        succeededBlock([ @[image] mutableCopy]);
+    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+        
+        errorBlock(error);
+        
+    }];
+    
+    [self enqueueOperation:op];
+    return op;
+}
+
 @end
 
 

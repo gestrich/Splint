@@ -6,16 +6,21 @@
 //  Copyright (c) 2013 William Gestrich. All rights reserved.
 //
 
+#define OVERRIDE_TO_HEROKU 0
+
+#if (TARGET_IPHONE_SIMULATOR) & !OVERRIDE_TO_HEROKU
+    #define BASE_URL @"localhost:3000/"
+#else
+    #define BASE_URL @"desolate-island-3918.herokuapp.com/"
+#endif
+
+
 #import <UIKit/UIKit.h>
 #import "RESTfulEngine.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-#if TARGET_IPHONE_SIMULATOR
-#define BASE_URL @"localhost:3000/"
-#else
-#define BASE_URL @"desolate-island-3918.herokuapp.com/"
-#endif
+
 
 
 @property (strong, nonatomic) UIWindow *window;

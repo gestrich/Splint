@@ -17,7 +17,7 @@
 #import "ContentDetailViewController.h"
 
 #define INDEX_CELL_ID @"index_cell"
-#define INDEX_CELL_HEIGHT 80.
+#define INDEX_CELL_HEIGHT 160.
 
 @interface IndexViewController ()
 
@@ -48,6 +48,8 @@
     } onError:^(NSError *engineError) {
         [UIAlertView showWithError:engineError];
     }];
+    
+
      
     
 }
@@ -105,7 +107,22 @@
     Video *video = [self.videoItems objectAtIndex:indexPath.row];
     cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:INDEX_CELL_ID forIndexPath:indexPath];
     cell.titleView.text = video.title;
-    cell.timeView.text = video.videoLength;
+    cell.titleView.numberOfLines = 0;
+    cell.imageView.image = nil;
+
+    if(video.imageUrl){
+        AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+        [delegate.engine fetchImageItem:video.imageUrl OnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                IndexCell *updateCell = (IndexCell *)[collectionView cellForItemAtIndexPath:indexPath];
+                if(listOfModelBaseObjects && [listOfModelBaseObjects count] > 0){
+                    [updateCell.imageView setImage:[listOfModelBaseObjects lastObject]];
+                }
+            });
+
+        } onError:nil];
+    }
+
     return cell;
     
 }
