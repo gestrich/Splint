@@ -36,6 +36,7 @@
 		CA633EF517B9E89E0083B1CC /* index_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF417B9E89E0083B1CC /* index_background.png */; };
 		CA633EF717B9EC8F0083B1CC /* index_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF617B9EC8F0083B1CC /* index_background@2x.png */; };
 		CA633EF817B9EC8F0083B1CC /* index_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA633EF617B9EC8F0083B1CC /* index_background@2x.png */; };
+		CA7DB50F18AB1FB10034B52D /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DB50E18AB1FB10034B52D /* NavigationViewController.m */; };
 		CA9B9429179D8E04004931C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B9428179D8E04004931C1 /* UIKit.framework */; };
 		CA9B942B179D8E04004931C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942A179D8E04004931C1 /* Foundation.framework */; };
 		CA9B942D179D8E04004931C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9B942C179D8E04004931C1 /* CoreGraphics.framework */; };
@@ -73,6 +74,8 @@
 		CA633EF317B9E4D20083B1CC /* Splint copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Splint copy-Info.plist"; path = "/Users/williamgestrich/Desktop/Splint/Splint copy-Info.plist"; sourceTree = "<absolute>"; };
 		CA633EF417B9E89E0083B1CC /* index_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index_background.png; sourceTree = "<group>"; };
 		CA633EF617B9EC8F0083B1CC /* index_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index_background@2x.png"; sourceTree = "<group>"; };
+		CA7DB50D18AB1FB10034B52D /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		CA7DB50E18AB1FB10034B52D /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		CA9B9425179D8E04004931C1 /* Splint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B9428179D8E04004931C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA9B942A179D8E04004931C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +275,8 @@
 				CA9B9444179D8E05004931C1 /* IndexViewController.m */,
 				CAB0E0DF1877BF28006BE456 /* ContentDetailViewController.h */,
 				CAB0E0E01877BF28006BE456 /* ContentDetailViewController.m */,
+				CA7DB50D18AB1FB10034B52D /* NavigationViewController.h */,
+				CA7DB50E18AB1FB10034B52D /* NavigationViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				CAF1A61417E3573F00ACF47C /* RESTfulEngine.m in Sources */,
 				CAB0E0E11877BF28006BE456 /* ContentDetailViewController.m in Sources */,
 				CAA54F2018146CF30097AFA3 /* UIAlertView+Blocks.m in Sources */,
+				CA7DB50F18AB1FB10034B52D /* NavigationViewController.m in Sources */,
 				CAF1A61717E3578300ACF47C /* RESTfulOperation.m in Sources */,
 				CAF1A61A17E357AF00ACF47C /* RESTError.m in Sources */,
 				CAF1A61D17E357E000ACF47C /* JSONModel.m in Sources */,

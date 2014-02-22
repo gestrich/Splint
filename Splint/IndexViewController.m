@@ -74,15 +74,17 @@
     
     [collectionView deselectItemAtIndexPath:indexPath animated:NO];
     Video *video = [self.videoItems objectAtIndex:indexPath.row];
-    [self showVideo:video.urlString];
+    [self showVideo:video];
 }
 
-- (void)showVideo:(NSString *)urlString {
+- (void)showVideo:(Video *)video{
 
-    NSString *url = [BASE_URL stringByAppendingString: urlString];
+    NSString *url = [BASE_URL stringByAppendingString: video.urlString];
     url = [@"http://" stringByAppendingString:url];
     ContentDetailViewController *contentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"content"];
     contentVC.videoURL = [NSURL URLWithString:url];
+    contentVC.video = video;
+
     
     [self.navigationController pushViewController:contentVC animated:YES];
     
@@ -132,6 +134,14 @@
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake(self.collectionView.frame.size.width, INDEX_CELL_HEIGHT);
 
+}
+
+-(NSUInteger) supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskAll;
+}
+
+-(BOOL) shouldAutorotate{
+    return YES;
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation

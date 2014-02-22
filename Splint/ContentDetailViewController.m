@@ -13,6 +13,8 @@
 @interface ContentDetailViewController ()
 
 @property (strong, nonatomic) MPMoviePlayerController *player;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @end
 
 @implementation ContentDetailViewController
@@ -23,17 +25,18 @@
 	// Do any additional setup after loading the view.
     self.player = [[MPMoviePlayerController alloc] initWithContentURL:self.videoURL];
     [self.player prepareToPlay];
-    //[self.player.view setFrame:self.videoContainerView.bounds];
     [self.videoContainerView addSubview:self.player.view];
-    
     [self.player.view setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.videoContainerView setTranslatesAutoresizingMaskIntoConstraints: NO];
     UIView *playerView = self.player.view;
-    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[playerView]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(playerView)];
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[playerView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(playerView)];
     [self.videoContainerView addConstraints:constraints];
     constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[playerView]-1-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(playerView)];
     [self.videoContainerView addConstraints:constraints];
-    //[self.player play];
+    self.player.shouldAutoplay = NO;
+    
+    self.titleLabel.text = self.video.title;
+    self.textView.text = self.video.desc;
     
 }
 

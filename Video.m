@@ -21,6 +21,7 @@
     [encoder encodeObject:self.title forKey:@"Title"];
     [encoder encodeObject:self.videoLength forKey:@"VideoLength"];
     [encoder encodeObject:self.imageUrl forKey:@"ImageUrl"];
+     [encoder encodeObject:self.desc forKey:@"desc"];
 
 }
 
@@ -35,6 +36,8 @@
             self.imageUrl = [decoder decodeObjectForKey:@"VideoLength"];
         if ([decoder containsValueForKey:@"ImageUrl"])
             self.imageUrl = [decoder decodeObjectForKey:@"ImageUrl"];
+        if ([decoder containsValueForKey:@"desc"])
+            self.imageUrl = [decoder decodeObjectForKey:@"desc"];
     }
     return self;
 }
@@ -48,6 +51,7 @@
     [theCopy setTitle:[self.title copy]];
     [theCopy setVideoLength:[self.videoLength copy]];
     [theCopy setImageUrl:[self.imageUrl copy]];
+    [theCopy setDesc:[self.desc copy]];
     
     return theCopy;
 }
