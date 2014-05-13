@@ -15,6 +15,7 @@
 #import "Video.h"
 #import "RESTError.h"
 #import "ContentDetailViewController.h"
+#import "HTTPRequestManger.h"
 
 #define INDEX_CELL_ID @"index_cell"
 #define INDEX_CELL_HEIGHT 160.
@@ -40,6 +41,15 @@
     
     //Fetch video list
     AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [delegate.afManager fetchVideoItemsOnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
+        self.videoItems = listOfModelBaseObjects;
+        [self.collectionView reloadData];
+    } onError:^(NSError *engineError) {
+        //Show error
+    }];
+    
+    
+    /*
      [delegate.engine fetchVideoItemsOnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
         
          self.videoItems = listOfModelBaseObjects;
@@ -48,6 +58,9 @@
     } onError:^(NSError *engineError) {
         [UIAlertView showWithError:engineError];
     }];
+    */
+    
+    //Fetch video list
     
 
      
@@ -79,8 +92,7 @@
 
 - (void)showVideo:(Video *)video{
 
-    NSString *url = [BASE_URL stringByAppendingString: video.urlString];
-    url = [@"http://" stringByAppendingString:url];
+    NSString *url = [BASE_URL stringByAppendingPathComponent:video.urlString];
     ContentDetailViewController *contentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"content"];
     contentVC.videoURL = [NSURL URLWithString:url];
     contentVC.video = video;
@@ -114,7 +126,7 @@
 
     if(video.imageUrl){
         AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-        [delegate.engine fetchImageItem:video.imageUrl OnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
+        [delegate.afManager fetchImageItem:video.imageUrl OnSucceeded:^(NSMutableArray *listOfModelBaseObjects) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 IndexCell *updateCell = (IndexCell *)[collectionView cellForItemAtIndexPath:indexPath];
                 if(listOfModelBaseObjects && [listOfModelBaseObjects count] > 0){
@@ -123,6 +135,7 @@
             });
 
         } onError:nil];
+        
     }
 
     return cell;

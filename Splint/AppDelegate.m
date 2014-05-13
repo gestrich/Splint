@@ -12,8 +12,8 @@
 #define HAND_IMAGE_TAG 2001
 #define SPLASH_VIEW_TIME 3
 
-#import "AppDelegate.h"
-#import "RESTfulOperation.h"
+#import "AppDelegate.h" 
+//#import "RESTfulOperation.h"
 
 @implementation AppDelegate
 
@@ -41,9 +41,12 @@
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     //instantiate network engine
-    self.engine = [[RESTfulEngine alloc] initWithHostName:BASE_URL];
-    [self.engine useCache];
-    [self.engine registerOperationSubclass:[RESTfulOperation class]];
+    //self.engine = [[RESTfulEngine alloc] initWithHostName:BASE_URL];
+    //[self.engine useCache];
+    //[self.engine registerOperationSubclass:[RESTfulOperation class]];
+    
+    //instantiate afnetworking
+    self.afManager = [[HTTPRequestManager alloc] initWithBaseURL:[NSURL URLWithString:BASE_URL ]];
     
     return YES;
 }
