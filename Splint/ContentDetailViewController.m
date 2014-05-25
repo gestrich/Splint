@@ -40,6 +40,10 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [self.player stop];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

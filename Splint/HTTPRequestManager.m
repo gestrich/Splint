@@ -16,30 +16,6 @@
 
 -(void) fetchVideoItemsOnSucceeded:(ArrayBlock) succeededBlock
                                         onError:(ErrorBlock) errorBlock{
-    /*
-    RESTfulOperation *op = (RESTfulOperation*) [self operationWithPath:VIDEO_ITEMS_URL];
-    
-    [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-        
-        NSMutableDictionary *responseDictionary = [completedOperation responseJSON];
-        NSMutableArray *videoItemsJson = [responseDictionary objectForKey:@"videoitems"];
-        
-        NSMutableArray *videoItems = [NSMutableArray array];
-        
-        [videoItemsJson enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            [videoItems addObject:[[Video alloc] initWithDictionary:obj]];
-        }];
-        
-        succeededBlock(videoItems);
-    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-        
-        errorBlock(error);
-        
-    }];
-    
-    [self enqueueOperation:op];
-    return op;
-     */
 
     [self GET:VIDEO_ITEMS_URL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *videoItemsJson = [responseObject objectForKey:@"videoitems"];

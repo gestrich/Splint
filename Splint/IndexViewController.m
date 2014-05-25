@@ -13,7 +13,6 @@
 
 #import "IndexCell.h"
 #import "Video.h"
-#import "RESTError.h"
 #import "ContentDetailViewController.h"
 #import "HTTPRequestManger.h"
 
